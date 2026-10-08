@@ -25,7 +25,7 @@ if not API_KEY:
     st.stop()
 
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel("gemini-flash-expansion")
+model = genai.GenerativeModel("gemini-3.5-flash-lite")
 
 # ---------------------- TEXT EXTRACTION ----------------------
 def extract_text_from_pdf(uploaded_file):
